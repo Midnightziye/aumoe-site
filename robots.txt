@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-# 错误页不参与索引
+# keep the error page out of search results
 Disallow: /404
 
 Sitemap: https://aumoe.cn/sitemap.xml
