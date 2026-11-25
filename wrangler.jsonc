@@ -1,0 +1,12 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cloudflare/workers-sdk/main/packages/wrangler/config-schema.json",
+  "name": "aumoe-site",
+  "compatibility_date": "2026-11-26",
+
+  // 纯静态站：把仓库根目录当作静态资源目录发布，不需要 Worker 脚本
+  "assets": {
+    "directory": "./",
+    // 找不到文件时返回根目录的 404.html，并带上 404 状态码
+    "not_found_handling": "404-page"
+  }
+}
