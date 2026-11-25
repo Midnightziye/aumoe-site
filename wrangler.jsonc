@@ -2,6 +2,10 @@
   "$schema": "https://raw.githubusercontent.com/cloudflare/workers-sdk/main/packages/wrangler/config-schema.json",
   "name": "aumoe-site",
   "compatibility_date": "2026-11-26",
+  // 暂时保留 workers.dev 地址方便测试，绑定自定义域后可改成 false
+  "workers_dev": true,
+  // 关掉每次部署生成的预览 URL，减少暴露面
+  "preview_urls": false,
 
   // 纯静态站：把仓库根目录当作静态资源目录发布，不需要 Worker 脚本
   "assets": {
